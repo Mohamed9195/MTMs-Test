@@ -27,6 +27,10 @@
                                             <constraint firstAttribute="height" constant="30" id="x4w-ve-ZtX"/>
                                         </constraints>
                                         <state key="normal" image="menu"/>
+                                        <connections>
+                                            <action selector="presseToOpenLiftSideMenue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rzn-Pe-UTW"/>
+                                            <segue destination="mwj-0I-Zuj" kind="presentation" modalPresentationStyle="overFullScreen" modalTransitionStyle="crossDissolve" id="cW6-Np-lUi"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemGray2Color"/>
@@ -177,6 +181,135 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="973.91304347826099" y="41.517857142857139"/>
+        </scene>
+        <!--Lift Side Menue View Controller-->
+        <scene sceneID="ywb-ZN-VhV">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="mwj-0I-Zuj" customClass="LiftSideMenueViewController" customModule="MTMs" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vWB-ZI-7Nx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zqx-Bm-daU">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="dismissLiftSideMenue:" destination="mwj-0I-Zuj" eventType="touchUpInside" id="q8p-fi-2d4"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="WL2-ZH-jGr">
+                                <rect key="frame" x="0.0" y="0.0" width="283" height="896"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M38-c0-dgT">
+                                        <rect key="frame" x="0.0" y="0.0" width="283" height="440"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <state key="normal">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gcl-6k-5L2">
+                                        <rect key="frame" x="0.0" y="448" width="283" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <inset key="titleEdgeInsets" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="test">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qjq-Tn-pOd">
+                                        <rect key="frame" x="0.0" y="448" width="283" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <inset key="titleEdgeInsets" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="test">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Pa-P1-Dv3">
+                                        <rect key="frame" x="0.0" y="448" width="283" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <inset key="titleEdgeInsets" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="test">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eny-Jo-szt">
+                                        <rect key="frame" x="0.0" y="448" width="283" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <inset key="titleEdgeInsets" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="test">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fje-ti-gws">
+                                        <rect key="frame" x="0.0" y="448" width="283" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <inset key="titleEdgeInsets" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="test">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nYZ-GW-UmK">
+                                        <rect key="frame" x="0.0" y="448" width="283" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <inset key="titleEdgeInsets" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="test">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y3K-dL-JGb">
+                                        <rect key="frame" x="0.0" y="448" width="283" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <inset key="titleEdgeInsets" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="test">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qjo-h8-HSJ">
+                                        <rect key="frame" x="0.0" y="448" width="283" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <inset key="titleEdgeInsets" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="test">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vrE-el-c1o">
+                                        <rect key="frame" x="0.0" y="456" width="283" height="440"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <state key="normal">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="koJ-Rv-1UB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zqx-Bm-daU" firstAttribute="trailing" secondItem="koJ-Rv-1UB" secondAttribute="trailing" id="8eh-CQ-hGt"/>
+                            <constraint firstItem="zqx-Bm-daU" firstAttribute="top" secondItem="vWB-ZI-7Nx" secondAttribute="top" id="D9r-Ks-3b7"/>
+                            <constraint firstItem="zqx-Bm-daU" firstAttribute="leading" secondItem="koJ-Rv-1UB" secondAttribute="leading" id="HAH-Ol-6pn"/>
+                            <constraint firstItem="WL2-ZH-jGr" firstAttribute="top" secondItem="vWB-ZI-7Nx" secondAttribute="top" id="J1c-vg-xrz"/>
+                            <constraint firstAttribute="bottom" secondItem="zqx-Bm-daU" secondAttribute="bottom" id="M8T-9L-3qc"/>
+                            <constraint firstItem="WL2-ZH-jGr" firstAttribute="leading" secondItem="koJ-Rv-1UB" secondAttribute="leading" id="UmV-zn-RJh"/>
+                            <constraint firstAttribute="bottom" secondItem="WL2-ZH-jGr" secondAttribute="bottom" id="YSa-qs-4PF"/>
+                            <constraint firstItem="koJ-Rv-1UB" firstAttribute="trailing" secondItem="WL2-ZH-jGr" secondAttribute="trailing" constant="131" id="voO-04-jtg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outletCollection property="downMenu" destination="eny-Jo-szt" collectionClass="NSMutableArray" id="BFV-zh-UPw"/>
+                        <outletCollection property="downMenu" destination="gcl-6k-5L2" collectionClass="NSMutableArray" id="cUc-zd-F9T"/>
+                        <outletCollection property="downMenu" destination="qjq-Tn-pOd" collectionClass="NSMutableArray" id="Tmg-fs-1Mb"/>
+                        <outletCollection property="downMenu" destination="6Pa-P1-Dv3" collectionClass="NSMutableArray" id="Dqp-HJ-f1G"/>
+                        <outletCollection property="downMenu" destination="eny-Jo-szt" collectionClass="NSMutableArray" id="LTr-ZG-Iwk"/>
+                        <outletCollection property="downMenu" destination="fje-ti-gws" collectionClass="NSMutableArray" id="XgA-Sz-fP5"/>
+                        <outletCollection property="downMenu" destination="nYZ-GW-UmK" collectionClass="NSMutableArray" id="SG7-0N-mf6"/>
+                        <outletCollection property="downMenu" destination="Y3K-dL-JGb" collectionClass="NSMutableArray" id="Vkt-wm-zGD"/>
+                        <outletCollection property="downMenu" destination="Qjo-h8-HSJ" collectionClass="NSMutableArray" id="csi-wS-PFY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9B0-In-w2d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1821.7391304347827" y="41.517857142857139"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="tMb-dO-aKC">

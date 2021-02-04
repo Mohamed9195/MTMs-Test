@@ -34,6 +34,10 @@ class ViewController: UIViewController {
         setLocationManger()
     }
 
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
+
     // location manger
     private func setLocationManger() {
         locationManger.delegate = self
@@ -149,6 +153,10 @@ class ViewController: UIViewController {
                                             }
         })
     }
+
+    @IBAction func presseToOpenLiftSideMenue(_ sender: UIButton) {
+    }
+    
 }
 
 //MARK:- location Delegate

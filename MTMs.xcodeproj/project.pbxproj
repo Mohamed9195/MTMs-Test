@@ -14,6 +14,7 @@
 		7D58E9B425CBFFD400D7A029 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D58E9B325CBFFD400D7A029 /* Assets.xcassets */; };
 		7D58E9B725CBFFD400D7A029 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D58E9B525CBFFD400D7A029 /* LaunchScreen.storyboard */; };
 		7D58E9D625CC0A4D00D7A029 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7D58E9D525CC0A4D00D7A029 /* GoogleService-Info.plist */; };
+		7DA4BA0E25CC2F5A00A60687 /* LiftSideMenueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA4BA0D25CC2F5A00A60687 /* LiftSideMenueViewController.swift */; };
 		FBDED3B66FBCFC839EE8B37F /* Pods_MTMs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6AA3C0CA648F1BF30E45D9E /* Pods_MTMs.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,7 @@
 		7D58E9B625CBFFD400D7A029 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7D58E9B825CBFFD400D7A029 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7D58E9D525CC0A4D00D7A029 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		7DA4BA0D25CC2F5A00A60687 /* LiftSideMenueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiftSideMenueViewController.swift; sourceTree = "<group>"; };
 		C819577506DA8B57E5B926DB /* Pods-MTMs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTMs.debug.xcconfig"; path = "Target Support Files/Pods-MTMs/Pods-MTMs.debug.xcconfig"; sourceTree = "<group>"; };
 		D6AA3C0CA648F1BF30E45D9E /* Pods_MTMs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MTMs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -77,6 +79,7 @@
 				7D58E9AA25CBFFCF00D7A029 /* AppDelegate.swift */,
 				7D58E9AC25CBFFCF00D7A029 /* SceneDelegate.swift */,
 				7D58E9AE25CBFFCF00D7A029 /* ViewController.swift */,
+				7DA4BA0D25CC2F5A00A60687 /* LiftSideMenueViewController.swift */,
 				7D58E9B025CBFFCF00D7A029 /* Main.storyboard */,
 				7D58E9D525CC0A4D00D7A029 /* GoogleService-Info.plist */,
 				7D58E9B325CBFFD400D7A029 /* Assets.xcassets */,
@@ -212,6 +215,7 @@
 				7D58E9AF25CBFFCF00D7A029 /* ViewController.swift in Sources */,
 				7D58E9AB25CBFFCF00D7A029 /* AppDelegate.swift in Sources */,
 				7D58E9AD25CBFFCF00D7A029 /* SceneDelegate.swift in Sources */,
+				7DA4BA0E25CC2F5A00A60687 /* LiftSideMenueViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
