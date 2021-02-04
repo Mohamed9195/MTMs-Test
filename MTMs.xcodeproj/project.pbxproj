@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,12 @@
 		7D58E9B225CBFFCF00D7A029 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D58E9B025CBFFCF00D7A029 /* Main.storyboard */; };
 		7D58E9B425CBFFD400D7A029 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D58E9B325CBFFD400D7A029 /* Assets.xcassets */; };
 		7D58E9B725CBFFD400D7A029 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D58E9B525CBFFD400D7A029 /* LaunchScreen.storyboard */; };
+		7D58E9D625CC0A4D00D7A029 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7D58E9D525CC0A4D00D7A029 /* GoogleService-Info.plist */; };
+		FBDED3B66FBCFC839EE8B37F /* Pods_MTMs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6AA3C0CA648F1BF30E45D9E /* Pods_MTMs.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		14715DF90F71F40D96D3728C /* Pods-MTMs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTMs.release.xcconfig"; path = "Target Support Files/Pods-MTMs/Pods-MTMs.release.xcconfig"; sourceTree = "<group>"; };
 		7D58E9A725CBFFCE00D7A029 /* MTMs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MTMs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D58E9AA25CBFFCF00D7A029 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D58E9AC25CBFFCF00D7A029 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,9 @@
 		7D58E9B325CBFFD400D7A029 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D58E9B625CBFFD400D7A029 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7D58E9B825CBFFD400D7A029 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D58E9D525CC0A4D00D7A029 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		C819577506DA8B57E5B926DB /* Pods-MTMs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTMs.debug.xcconfig"; path = "Target Support Files/Pods-MTMs/Pods-MTMs.debug.xcconfig"; sourceTree = "<group>"; };
+		D6AA3C0CA648F1BF30E45D9E /* Pods_MTMs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MTMs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBDED3B66FBCFC839EE8B37F /* Pods_MTMs.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6AA602D04E21CC590A4982C5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C819577506DA8B57E5B926DB /* Pods-MTMs.debug.xcconfig */,
+				14715DF90F71F40D96D3728C /* Pods-MTMs.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		7D58E99E25CBFFCE00D7A029 = {
 			isa = PBXGroup;
 			children = (
 				7D58E9A925CBFFCE00D7A029 /* MTMs */,
 				7D58E9A825CBFFCE00D7A029 /* Products */,
+				6AA602D04E21CC590A4982C5 /* Pods */,
+				941C4A398486B95B5AB6FDAF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,11 +78,20 @@
 				7D58E9AC25CBFFCF00D7A029 /* SceneDelegate.swift */,
 				7D58E9AE25CBFFCF00D7A029 /* ViewController.swift */,
 				7D58E9B025CBFFCF00D7A029 /* Main.storyboard */,
+				7D58E9D525CC0A4D00D7A029 /* GoogleService-Info.plist */,
 				7D58E9B325CBFFD400D7A029 /* Assets.xcassets */,
 				7D58E9B525CBFFD400D7A029 /* LaunchScreen.storyboard */,
 				7D58E9B825CBFFD400D7A029 /* Info.plist */,
 			);
 			path = MTMs;
+			sourceTree = "<group>";
+		};
+		941C4A398486B95B5AB6FDAF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D6AA3C0CA648F1BF30E45D9E /* Pods_MTMs.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7D58E9BB25CBFFD400D7A029 /* Build configuration list for PBXNativeTarget "MTMs" */;
 			buildPhases = (
+				0C860A1670F9B5D542C46A34 /* [CP] Check Pods Manifest.lock */,
 				7D58E9A325CBFFCE00D7A029 /* Sources */,
 				7D58E9A425CBFFCE00D7A029 /* Frameworks */,
 				7D58E9A525CBFFCE00D7A029 /* Resources */,
+				E864376DC10670324F3B8AE2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,11 +155,54 @@
 			files = (
 				7D58E9B725CBFFD400D7A029 /* LaunchScreen.storyboard in Resources */,
 				7D58E9B425CBFFD400D7A029 /* Assets.xcassets in Resources */,
+				7D58E9D625CC0A4D00D7A029 /* GoogleService-Info.plist in Resources */,
 				7D58E9B225CBFFCF00D7A029 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C860A1670F9B5D542C46A34 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MTMs-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E864376DC10670324F3B8AE2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MTMs/Pods-MTMs-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MTMs/Pods-MTMs-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MTMs/Pods-MTMs-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7D58E9A325CBFFCE00D7A029 /* Sources */ = {
@@ -283,12 +355,14 @@
 		};
 		7D58E9BC25CBFFD400D7A029 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C819577506DA8B57E5B926DB /* Pods-MTMs.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BN2D9VKA46;
 				INFOPLIST_FILE = MTMs/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,18 +370,20 @@
 				PRODUCT_BUNDLE_IDENTIFIER = MH.MTMs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		7D58E9BD25CBFFD400D7A029 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14715DF90F71F40D96D3728C /* Pods-MTMs.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BN2D9VKA46;
 				INFOPLIST_FILE = MTMs/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +391,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = MH.MTMs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
